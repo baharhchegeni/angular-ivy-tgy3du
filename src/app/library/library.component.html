@@ -1,0 +1,17 @@
+<div class="library">
+  <div *ngFor="let book of books">
+    <p class="title">
+      <img
+        class="icon"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Circle-icons-bookshelf-pink.svg/640px-Circle-icons-bookshelf-pink.svg.png"
+      />
+      {{ book.volumeInfo.title }}
+    </p>
+    <span> by {{ book.volumeInfo.authors }}</span>
+    <div>
+      <button class="remove-button" (click)="remove.emit(book.id)">
+        Remove from My Library
+      </button>
+    </div>
+  </div>
+</div>

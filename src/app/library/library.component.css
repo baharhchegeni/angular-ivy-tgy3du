@@ -1,0 +1,28 @@
+.icon {
+  filter: invert(1);
+  position: relative;
+  top: 20px;
+  width: 50px;
+}
+
+.id {
+  font-size: small;
+  position: relative;
+  top: 30px;
+}
+
+.library {
+  min-width: 45vw;
+  width: 100%;
+}
+
+.remove-button {
+  background-color: rgb(18, 44, 94);
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+}

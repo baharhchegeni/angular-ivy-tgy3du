@@ -1,0 +1,18 @@
+<div class="book-list">
+  <div class="book" *ngFor="let book of books">
+    <em class="id">{{ book.id }}</em>
+    <p class="title">
+      <img
+        class="icon"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Circle-icons-bookshelf-pink.svg/640px-Circle-icons-bookshelf-pink.svg.png"
+      />
+      {{ book.volumeInfo.title }}
+    </p>
+    <span> by {{ book.volumeInfo.authors }}</span>
+    <div>
+      <button (click)="addToLibrary.emit(book.id)" class="add-button">
+        Add to My Library
+      </button>
+    </div>
+  </div>
+</div>

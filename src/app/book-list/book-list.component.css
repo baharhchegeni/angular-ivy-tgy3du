@@ -1,0 +1,27 @@
+.add-button {
+  background-color: rgb(237, 111, 160);
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.book-list {
+  min-width: 45vw;
+  width: 100%;
+}
+
+.icon {
+  position: relative;
+  top: 20px;
+  width: 50px;
+}
+
+.id {
+  font-size: small;
+  position: relative;
+  top: 30px;
+}
+
+.title {
+  font-weight: 700;
+}

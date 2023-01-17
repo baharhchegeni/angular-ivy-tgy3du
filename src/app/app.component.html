@@ -1,0 +1,20 @@
+<div class="book-store">
+  <div>
+    <h2>Books</h2>
+
+    <app-book-list
+      [books]="repo.books$ | async"
+      (addToLibrary)="repo.addToLibrary($event)"
+    >
+    </app-book-list>
+  </div>
+  <div>
+    <h2>My Library</h2>
+
+    <app-library
+      [books]="repo.ownBooks$ | async"
+      (remove)="repo.removeFromLibrary($event)"
+    >
+    </app-library>
+  </div>
+</div>
